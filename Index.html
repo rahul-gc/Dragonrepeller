@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPG - Dragon Repeller</title>
+    <link rel="stylesheet" href="stylecss.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="game">
+        
+        <header>
+            <h1>Dragon Repeller</h1>
+        </header>
+        <div id="stats">
+            <span class="stat">XP: <strong><span id="xpText">0</span></strong></span>
+            <span class="stat">Health: <strong><span id="healthText">100</span></strong></span>
+            <span class="stat">Gold: <strong><span id="goldText">50</span></strong></span>
+        </div>
+        <div id="inventory">
+            <h3>Inventory:</h3>
+            <ul id="inventoryList"></ul>
+        </div>
+        <div id="controls">
+            <button id="button1" class="game-button">Go to store</button>
+            <button id="button2" class="game-button">Go to cave</button>
+            <button id="button3" class="game-button">Fight dragon</button>
+        </div>
+        <div id="monsterStats">
+            <img id="monsterImage" src="https://i.ebayimg.com/images/g/jkQAAOSwSDJkIZ1h/s-l1200.png" alt="Monster">
+            <span class="stat">Monster Name: <strong><span id="monsterName"></span></strong></span>
+            <span class="stat">Health: <strong><span id="monsterHealth"></span></strong></span>
+            <div class="health-bar">
+                <div id="monsterHealthBar" class="health-fill"></div>
+            </div>
+        </div>
+        <div id="text">Welcome to <strong>Dragon Repeller</strong>! Your quest is to defeat the dragon and save the town.</div>
+    </div>
+    <div id="shop" class="hidden">
+        <h2>Weapon Shop</h2>
+        <div id="shop-items">
+            <div class="shop-item">
+                <img src="C:\Users\dell\Downloads\sword-png-13991.png" alt="Sword" width="170px"margin
+                ="2px">
+                <p><strong>Sword</strong></p>
+                <p>Price: <span class="price">30</span> Gold</p>
+                <button class="buy-button" onclick="buyItem('Sword', 30)">Buy</button>
+            </div>
+            <div class="shop-item">
+                <img src="https://images.free3d.com/imgd/l25197-cartoon-bow-4086.png" alt="Bow" width="170px">
+                <p><strong>Bow</strong></p>
+                <p>Price: <span class="price">40</span> Gold</p>
+                <button class="buy-button" onclick="buyItem('Bow', 40)">Buy</button>
+            </div>
+            <div class="shop-item">
+                <img src="https://preview.free3d.com/img/2017/11/2269155922498553233/8j8rcoz9.jpg" alt="Shield" width="170px">
+                <p><strong>Shield</strong></p>
+                <p>Price: <span class="price">50</span> Gold</p>
+                <button class="buy-button" onclick="buyItem('Shield', 50)">Buy</button>
+            </div>
+        </div>
+        <button class="close-button" onclick="closeShop()">Close Shop</button>
+    </div>
+    <script src="scripttt.js"></script>
+    
+</body>
+</html>

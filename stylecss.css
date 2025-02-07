@@ -1,0 +1,152 @@
+
+body {
+        font-family: 'MedievalSharp', cursive;
+        background: url('https://i0.wp.com/troyerstling.com/wp-content/uploads/2018/10/shutterstock_242774791.jpg?fit=500%2C261&ssl=1') no-repeat center center fixed;
+        background-size: cover;
+        background-attachment: fixed;
+        color: #cbb8b8;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+      transform: translate3d(0,0,1);
+      will-change: transform;
+}
+#game {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.7);
+}
+header {
+    font-size: 28px;
+    font-weight: bold;
+    padding: 10px;
+    background: #b22222;
+    border-radius: 8px;
+    text-shadow: 2px 2px 5px black;
+}
+#stats {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background: #333;
+    border-radius: 5px;
+}
+
+.stat{
+    font-size: 18px;
+}
+#inventory {
+    margin-top: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#inventoryList {
+    list-style: none;
+    padding: 0;
+}
+#controls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.game-button {
+    background: linear-gradient(to bottom, #ffd700, #b8860b);
+    color: black;
+    font-weight: bold;
+    padding: 10px 15px;
+    border: 2px solid #8b0000;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.game-button:hover {
+    background: linear-gradient(to bottom, #b8860b, #ffd700);
+    transform: scale(1,1.1);
+}
+
+/* Monster Stats */
+#monsterStats {
+    display: none;
+    background: rgba(255, 0, 0, 0.8);
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+#monsterImage {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+/* Health Bar */
+.health-bar {
+    width: 100%;
+    height: 10px;
+    background: #555;
+    border-radius: 5px;
+    margin-top: 5px;
+    overflow: hidden;
+}
+
+.health-fill {
+    width: 100%;
+    height: 100%;
+    background: green;
+    transition: width 0.3s;
+}
+
+/* Text Box */
+#text {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 15px;
+}
+@keyframes fadeInZoom {
+    0% { opacity: 0; transform: scale(0.5); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: gold;
+    text-align: center;
+    animation: fadeInZoom 1.5s ease-out;
+}
+.hidden {
+    display: none;
+}
+.buy-button, .close-button {
+    background: linear-gradient(to bottom, #ffd700, #b8860b);
+    color: black;
+    font-weight: bold;
+    padding: 10px 15px;
+    border: 2px solid #8b0000;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin: 20px;
+}
+
+.buy-button:hover, .close-button:hover {
+    background: linear-gradient(to bottom, #b8860b, #ffd700);
+    transform: scale(1.1);
+}
+
+.buy-button:active, .close-button:active {
+    transform: scale(0.9);
+
+}
+
+
